@@ -31,12 +31,18 @@
           v-if="hamburgerMenuVisible"
           :class="{ menuVisible: hamburgerMenuVisible }">
           <ul>
-            <li><a href="">Početna</a></li>
-            <li><router-link to="/simple">O meni</router-link></li>
+            <li @click="() => router.push('/mainPage')">
+              <a href="">Početna</a>
+            </li>
+            <li @click="() => router.push('/simple')">
+              <router-link to="/simple">O meni</router-link>
+            </li>
             <li><a href="">Usluge</a></li>
             <!-- <li><a href="">Kontakt</a></li> -->
             <!-- <li><a href="">Galerija</a></li> -->
-            <li><router-link to="/admin">Dodaj slike</router-link></li>
+            <li @click="() => router.push('/admin')">
+              <router-link to="/admin">Dodaj slike</router-link>
+            </li>
             <div class="mobileSocial">
               <li>
                 <router-link to="/admin"
