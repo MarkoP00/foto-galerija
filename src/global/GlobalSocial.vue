@@ -5,7 +5,7 @@
       <span>Facebook</span>
     </a>
     <a href="#">
-      <i class="fab fa-twitter"></i>
+      <i class="fa-brands fa-x-twitter"></i>
       <span>Twitter</span>
     </a>
     <a href="#">
@@ -13,13 +13,10 @@
       <span>Instagram</span>
     </a>
     <a href="#">
-      <i class="fab fa-linkedin-in"></i>
-      <span>LinkedIn</span>
+      <i class="fa-brands fa-whatsapp"></i>
+      <span>Whatsapp</span>
     </a>
-    <a href="#">
-      <i class="fab fa-github"></i>
-      <span>Github</span>
-    </a>
+
     <a href="#">
       <i class="fab fa-youtube yt"></i>
       <span>YouTube</span>
@@ -75,7 +72,7 @@
 .container a:nth-child(2),
 .container a:nth-child(2) span,
 .container a:nth-child(2) span:before {
-  background: #1da1f2;
+  background: #333;
 }
 .container a:nth-child(3),
 .container a:nth-child(3) span,
@@ -85,16 +82,16 @@
 .container a:nth-child(4),
 .container a:nth-child(4) span,
 .container a:nth-child(4) span:before {
-  background: #2867b2;
+  background: #25d336;
 }
-.container a:nth-child(5),
+/* .container a:nth-child(5),
 .container a:nth-child(5) span,
 .container a:nth-child(5) span:before {
   background: #333;
-}
-.container a:nth-child(6),
-.container a:nth-child(6) span,
-.container a:nth-child(6) span:before {
+} */
+.container a:nth-child(5),
+.container a:nth-child(5) span,
+.container a:nth-child(5) span:before {
   background: #ff0000;
 }
 .container a:hover span {
@@ -105,9 +102,11 @@
 
 @media (max-width: 425px) {
   .container {
+    position: absolute;
     display: flex;
-    top: 92%;
-    left: 5%;
+    background: #000;
+    top: 95%;
+    left: 12%;
   }
 }
 @media (max-width: 375px) {
