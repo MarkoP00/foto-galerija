@@ -200,6 +200,14 @@ header.sticky .mobileList {
 
 .mobileList ul li {
   margin: 10px 0;
+  border: 1px solid #fff;
+  padding: 10px;
+  background-color: rgb(22, 147, 230, 0.4);
+  border-radius: 10px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .mobileList ul li a {
@@ -221,7 +229,7 @@ header.sticky .mobileList {
   gap: 20px;
 }
 .mobileSocial li i {
-  font-size: 20px;
+  font-size: 25px;
   padding: 5px;
 }
 @media (max-width: 1024px) {
@@ -266,6 +274,9 @@ header.sticky .mobileList {
   header img {
     height: 100px;
     width: 140px;
+  }
+  .mobileSocial li i {
+    font-size: 20px;
   }
 }
 

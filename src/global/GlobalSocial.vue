@@ -99,23 +99,17 @@
   opacity: 1;
   visibility: visible;
 }
-
+@media (max-width: 768px) {
+  .container {
+    display: none;
+  }
+}
 @media (max-width: 425px) {
   .container {
     position: absolute;
     background: #000;
     top: 20%;
     left: 0%;
-  }
-}
-@media (max-width: 375px) {
-  .container {
-    display: none;
-  }
-}
-@media (max-width: 320px) {
-  .container {
-    display: none;
   }
 }
 </style>
