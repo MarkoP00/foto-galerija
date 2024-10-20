@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <a href="#">
-      <i class="fab fa-facebook-f"></i>
+      <i class="fa-brands fa-facebook"></i>
       <span>Facebook</span>
     </a>
     <a href="#">
@@ -67,22 +67,22 @@
 .container a:nth-child(1),
 .container a:nth-child(1) span,
 .container a:nth-child(1) span:before {
-  background: #4267b2;
+  background: rgb(66, 103, 178, 0.8);
 }
 .container a:nth-child(2),
 .container a:nth-child(2) span,
 .container a:nth-child(2) span:before {
-  background: #333;
+  background: rgb(51, 51, 51, 0.8);
 }
 .container a:nth-child(3),
 .container a:nth-child(3) span,
 .container a:nth-child(3) span:before {
-  background: #e1306c;
+  background: rgb(225, 48, 108, 0.8);
 }
 .container a:nth-child(4),
 .container a:nth-child(4) span,
 .container a:nth-child(4) span:before {
-  background: #25d336;
+  background: rgb(37, 211, 54, 0.8);
 }
 /* .container a:nth-child(5),
 .container a:nth-child(5) span,
@@ -92,7 +92,7 @@
 .container a:nth-child(5),
 .container a:nth-child(5) span,
 .container a:nth-child(5) span:before {
-  background: #ff0000;
+  background: rgb(255, 0, 0, 0.8);
 }
 .container a:hover span {
   margin-left: 55px;
@@ -103,17 +103,14 @@
 @media (max-width: 425px) {
   .container {
     position: absolute;
-    display: flex;
     background: #000;
-    top: 95%;
-    left: 12%;
+    top: 20%;
+    left: 0%;
   }
 }
 @media (max-width: 375px) {
   .container {
-    display: flex;
-    top: 91%;
-    width: 57px;
+    display: none;
   }
 }
 @media (max-width: 320px) {

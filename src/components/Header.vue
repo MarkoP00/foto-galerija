@@ -36,6 +36,33 @@
             <!-- <li><a href="">Kontakt</a></li> -->
             <!-- <li><a href="">Galerija</a></li> -->
             <li><router-link to="/admin">Dodaj slike</router-link></li>
+            <div class="mobileSocial">
+              <li>
+                <router-link to="/admin"
+                  ><i class="fa-brands fa-facebook"></i
+                ></router-link>
+              </li>
+              <li>
+                <router-link to="/admin">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </router-link>
+              </li>
+              <li>
+                <router-link to="/admin">
+                  <i class="fab fa-instagram"></i>
+                </router-link>
+              </li>
+              <li>
+                <router-link to="/admin">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </router-link>
+              </li>
+              <li>
+                <router-link to="/admin">
+                  <i class="fab fa-youtube yt"></i>
+                </router-link>
+              </li>
+            </div>
           </ul>
         </div>
       </Transition>
@@ -201,6 +228,15 @@ header.sticky .mobileList {
 
 .mobileList ul li {
   margin: 10px 0;
+  border: 1px solid #fff;
+  padding: 10px;
+  background-color: rgb(22, 147, 230, 0.4);
+  border-radius: 10px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
 }
 
 .mobileList ul li a {
@@ -215,7 +251,16 @@ header.sticky .mobileList {
   display: flex;
   animation: slideDown 0.4s ease forwards;
 }
-
+header.sticky .mobileSocial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.mobileSocial li i {
+  font-size: 20px;
+  padding: 5px;
+}
 .banner {
   position: relative;
   width: 100%;
@@ -309,9 +354,11 @@ header.sticky .mobileList {
     justify-content: center;
     align-items: center;
   }
+  .mobileList ul li i {
+    font-size: 25px;
+  }
   header.sticky .mobileList ul li {
     backdrop-filter: blur(20px);
-    background-color: rgba(255, 255, 255, 0.1);
   }
   .mobileList ul li a {
     font-size: 1rem;
@@ -331,7 +378,9 @@ header.sticky .mobileList {
   header {
     padding: 0 10px 0 10px;
   }
-
+  .mobileList ul li i {
+    font-size: 20px;
+  }
   .banner-text h1 {
     font-size: 2.5em;
   }
@@ -342,6 +391,15 @@ header.sticky .mobileList {
   }
   .banner-text span {
     font-size: 1.1em;
+  }
+}
+@media (max-width: 325px) {
+  header.sticky .mobileSocial {
+    gap: 10px;
+  }
+  .mobileSocial li i {
+    font-size: 15px;
+    padding: 4px;
   }
 }
 @keyframes fade-in {

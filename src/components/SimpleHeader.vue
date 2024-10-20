@@ -37,6 +37,33 @@
             <!-- <li><a href="">Kontakt</a></li> -->
             <!-- <li><a href="">Galerija</a></li> -->
             <li><router-link to="/admin">Dodaj slike</router-link></li>
+            <div class="mobileSocial">
+              <li>
+                <router-link to="/admin"
+                  ><i class="fa-brands fa-facebook"></i
+                ></router-link>
+              </li>
+              <li>
+                <router-link to="/admin">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </router-link>
+              </li>
+              <li>
+                <router-link to="/admin">
+                  <i class="fab fa-instagram"></i>
+                </router-link>
+              </li>
+              <li>
+                <router-link to="/admin">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </router-link>
+              </li>
+              <li>
+                <router-link to="/admin">
+                  <i class="fab fa-youtube yt"></i>
+                </router-link>
+              </li>
+            </div>
           </ul>
         </div>
       </Transition>
@@ -187,7 +214,16 @@ header.sticky .mobileList {
   display: flex;
   animation: slideDown 0.4s ease forwards;
 }
-
+.mobileSocial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.mobileSocial li i {
+  font-size: 20px;
+  padding: 5px;
+}
 @media (max-width: 1024px) {
   .headerList {
     display: none;
@@ -241,6 +277,15 @@ header.sticky .mobileList {
   }
   header {
     padding: 0 10px 0 10px;
+  }
+}
+@media (max-width: 325px) {
+  .mobileSocial {
+    gap: 10px;
+  }
+  .mobileSocial li i {
+    font-size: 20px;
+    padding: 4px;
   }
 }
 
