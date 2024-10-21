@@ -86,6 +86,8 @@ const updateContainerStyle = (imgSrc) => {
   img.onload = () => {
     const aspectRatio = img.width / img.height;
 
+    const isSmallScreen = window.innerWidth <= 430;
+
     if (aspectRatio > 1.33) {
       containerStyle.value = {
         overflow: "hidden",
@@ -93,7 +95,7 @@ const updateContainerStyle = (imgSrc) => {
     } else {
       containerStyle.value = {
         width: "auto",
-        height: "80vh",
+        height: isSmallScreen ? "60vh" : "80vh",
       };
     }
   };

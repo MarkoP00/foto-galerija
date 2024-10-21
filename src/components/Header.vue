@@ -44,27 +44,27 @@
             </li>
             <div class="mobileSocial">
               <li>
-                <router-link to="/admin"
+                <router-link to=""
                   ><i class="fa-brands fa-facebook"></i
                 ></router-link>
               </li>
-              <li>
-                <router-link to="/admin">
+              <!-- <li>
+                <router-link to="">
                   <i class="fa-brands fa-x-twitter"></i>
                 </router-link>
-              </li>
+              </li> -->
               <li>
-                <router-link to="/admin">
+                <router-link to="">
                   <i class="fab fa-instagram"></i>
                 </router-link>
               </li>
-              <li>
-                <router-link to="/admin">
+              <!-- <li>
+                <router-link to="">
                   <i class="fa-brands fa-whatsapp"></i>
                 </router-link>
-              </li>
+              </li> -->
               <li>
-                <router-link to="/admin">
+                <router-link to="">
                   <i class="fab fa-youtube yt"></i>
                 </router-link>
               </li>

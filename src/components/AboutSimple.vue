@@ -86,11 +86,7 @@ import GlobalSocial from "../global/GlobalSocial.vue";
   color: #008cff;
 }
 
-.buttons {
-  margin-top: 30px;
-}
-
-button {
+/* button {
   margin-right: 15px;
   padding: 10px 20px;
   font-size: 16px;
@@ -105,7 +101,7 @@ button:hover {
   background-color: #008cff;
   color: white;
   box-shadow: 0 0 10px #008cff, 0 0 30px #008cff;
-}
+} */
 
 @media (max-width: 768px) {
   .aboutContent {
@@ -114,8 +110,8 @@ button:hover {
     max-width: 600px;
     gap: 0;
   }
-  .about {
-    min-height: 110vh;
+  .about-text {
+    margin-bottom: 0px;
   }
   .about img {
     width: 70%;
