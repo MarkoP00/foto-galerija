@@ -76,7 +76,7 @@
   </header>
   <div class="banner">
     <img
-      src="/images/bg-image.jpg"
+      src="/images/bg-noLogo.jpg"
       alt="image not found" />
     <div class="banner-text">
       <h1>Vaše uspomene</h1>

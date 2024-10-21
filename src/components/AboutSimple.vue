@@ -18,17 +18,19 @@
             dignissimos non corporis consequuntur suscipit?
           </p>
         </div>
-        <button>Konakt</button>
-        <button>Email</button>
+        <!-- <button>Konakt</button>
+        <button>Email</button> -->
       </div>
     </div>
   </section>
 </template>
+
 <script setup>
 import AnimatedBackground from "./AnimatedBackground.vue";
 import SimpleHeader from "./SimpleHeader.vue";
 import GlobalSocial from "../global/GlobalSocial.vue";
 </script>
+
 <style scoped>
 .about {
   min-height: 100vh;
@@ -112,7 +114,9 @@ button:hover {
     max-width: 600px;
     gap: 0;
   }
-
+  .about {
+    min-height: 110vh;
+  }
   .about img {
     width: 70%;
     margin-bottom: 20px;

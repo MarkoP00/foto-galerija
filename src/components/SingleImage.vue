@@ -1,7 +1,9 @@
 <template>
   <section @click="props.onClose">
     <main @click.stop>
-      <div class="image-container">
+      <div
+        class="image-container"
+        :style="containerStyle">
         <img
           :src="currentImage"
           :key="currentImage"
@@ -33,7 +35,8 @@
 
 <script setup>
 import { ref } from "vue";
-
+import { watch } from "vue";
+import { onMounted } from "vue";
 const props = defineProps({
   selectedImageURL: {
     type: String,
@@ -71,6 +74,37 @@ function nextImage() {
   }
   currentImage.value = props.images[currentImageIndex.value].imageURL;
 }
+const containerStyle = ref({
+  width: "auto",
+  height: "auto",
+});
+
+const updateContainerStyle = (imgSrc) => {
+  const img = new Image();
+  img.src = imgSrc;
+
+  img.onload = () => {
+    const aspectRatio = img.width / img.height;
+
+    if (aspectRatio > 1.33) {
+      containerStyle.value = {
+        overflow: "hidden",
+      };
+    } else {
+      containerStyle.value = {
+        width: "auto",
+        height: "80vh",
+      };
+    }
+  };
+};
+onMounted(() => {
+  updateContainerStyle(currentImage.value);
+});
+
+watch(currentImage, (newImage) => {
+  updateContainerStyle(newImage);
+});
 </script>
 
 <style scoped>
