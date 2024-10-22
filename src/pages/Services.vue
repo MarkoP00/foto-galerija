@@ -4,13 +4,11 @@
   <SimpleHeader></SimpleHeader>
   <section class="about">
     <div class="aboutContent">
-      <img
-        src="https://www.thefashionisto.com/wp-content/uploads/2023/05/Mens-Trenchcoat.jpg"
-        alt="" />
+      <FoldingCard></FoldingCard>
       <div class="aboutWrapper">
         <div class="about-text">
-          <h1>O meni</h1>
-          <h5>Profesionalni <span>Fotograf</span></h5>
+          <h1>Usluge</h1>
+          <h5>Aleksandar <span>Petrović</span></h5>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
             qui, quibusdam voluptas ducimus ad incidunt blanditiis sint maiores,
@@ -18,17 +16,15 @@
             dignissimos non corporis consequuntur suscipit?
           </p>
         </div>
-        <!-- <button>Konakt</button>
-        <button>Email</button> -->
       </div>
     </div>
   </section>
 </template>
 
 <script setup>
-import AnimatedBackground from "./AnimatedBackground.vue";
-import SimpleHeader from "./SimpleHeader.vue";
-import GlobalSocial from "../global/GlobalSocial.vue";
+import AnimatedBackground from "../components/AnimatedBackground.vue";
+import SimpleHeader from "../components/SimpleHeader.vue";
+import FoldingCard from "../components/FoldingCard.vue";
 </script>
 
 <style scoped>
@@ -50,18 +46,21 @@ import GlobalSocial from "../global/GlobalSocial.vue";
   gap: 20px;
 }
 
-.about img {
-  width: 50%;
+/* .about img {
+  width: 40%;
   border-radius: 20px;
   border: 3px solid #008cff;
   box-shadow: 0 0 10px #008cff, 0 0 25px #008cff;
   transition: transform 0.3s ease;
-}
+} */
 
 .aboutWrapper {
   width: 50%;
   color: white;
-  padding-left: 40px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  padding: 20px;
+  border: 1px solid #008cff;
 }
 .about-text {
   margin-bottom: 20px;
@@ -80,43 +79,35 @@ import GlobalSocial from "../global/GlobalSocial.vue";
   font-size: 18px;
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.6;
+  margin-top: 20px;
 }
 
 .about-text span {
   color: #008cff;
 }
-
-/* button {
-  margin-right: 15px;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 8px;
-  background: transparent;
-  border: 2px solid #008cff;
-  color: #008cff;
-  transition: all 0.3s ease;
+.socialButtons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
-button:hover {
-  background-color: #008cff;
-  color: white;
-  box-shadow: 0 0 10px #008cff, 0 0 30px #008cff;
-} */
-
 @media (max-width: 768px) {
+  .about {
+    margin-top: 60px;
+  }
   .aboutContent {
     flex-direction: column;
     text-align: center;
     max-width: 600px;
-    gap: 0;
+    gap: 10px;
   }
   .about-text {
     margin-bottom: 0px;
   }
-  .about img {
+  /* .about img {
     width: 70%;
     margin-bottom: 20px;
-  }
+  } */
 
   .aboutWrapper {
     width: 100%;
@@ -134,13 +125,21 @@ button:hover {
   .about-text p {
     font-size: 16px;
   }
+  .socialButtons {
+    justify-content: center;
+    margin-top: 10px;
+  }
 }
 @media (max-width: 425px) {
   .aboutContent {
-    gap: 0px;
+    flex-direction: column;
+    text-align: center;
+    max-width: 600px;
+    gap: 30px;
   }
-  .about img {
+
+  /* .about img {
     width: 75%;
-  }
+  } */
 }
 </style>

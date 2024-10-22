@@ -50,7 +50,6 @@ async function getImages() {
     imagesData.value.sort((a, b) => new Date(b.date) - new Date(a.date));
 
     sortArray.value = [...imagesData.value];
-    console.log(imagesData.value);
   } else {
     console.error("Failed to fetch images");
   }

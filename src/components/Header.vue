@@ -8,7 +8,7 @@
     <ul class="headerList">
       <li><a href="">Početna</a></li>
       <li><router-link to="/simple">O meni</router-link></li>
-      <li><a href="">Usluge</a></li>
+      <li><router-link to="/services">Usluge</router-link></li>
       <!-- <li><a href="">Kontakt</a></li> -->
       <!-- <li><a href="">Galerija</a></li> -->
       <li><router-link to="/admin">Dodaj slike</router-link></li>
@@ -36,37 +36,35 @@
             <li @click="() => router.push('/simple')">
               <router-link to="/simple">O meni</router-link>
             </li>
-            <li><a href="">Usluge</a></li>
-            <!-- <li><a href="">Kontakt</a></li> -->
-            <!-- <li><a href="">Galerija</a></li> -->
+            <li><router-link to="/services">Usluge</router-link></li>
             <li @click="() => router.push('/admin')">
               <router-link to="/admin">Dodaj slike</router-link>
             </li>
             <div class="mobileSocial">
-              <li>
-                <router-link to=""
+              <li
+                @click="
+                  navigation(
+                    'https://www.facebook.com/Aleksandarpetrovicphotography013/'
+                  )
+                ">
+                <a
+                  href="https://www.facebook.com/Aleksandarpetrovicphotography013/"
                   ><i class="fa-brands fa-facebook"></i
-                ></router-link>
+                ></a>
               </li>
-              <!-- <li>
-                <router-link to="">
-                  <i class="fa-brands fa-x-twitter"></i>
-                </router-link>
-              </li> -->
-              <li>
-                <router-link to="">
+
+              <li @click="navigation('https://www.instagram.com/app09.08/')">
+                <a href="https://www.instagram.com/app09.08/">
                   <i class="fab fa-instagram"></i>
-                </router-link>
+                </a>
               </li>
-              <!-- <li>
-                <router-link to="">
-                  <i class="fa-brands fa-whatsapp"></i>
-                </router-link>
-              </li> -->
-              <li>
-                <router-link to="">
+              <li
+                @click="
+                  navigation('https://www.youtube.com/@aleksandarpetrovic3531')
+                ">
+                <a href="https://www.youtube.com/@aleksandarpetrovic3531">
                   <i class="fab fa-youtube yt"></i>
-                </router-link>
+                </a>
               </li>
             </div>
           </ul>
@@ -100,7 +98,9 @@ const hamburgerMenuVisible = ref(false);
 function toggleHamburger() {
   hamburgerMenuVisible.value = !hamburgerMenuVisible.value;
 }
-
+function navigation(link) {
+  window.location.href = link;
+}
 onMounted(() => {
   const observer = new IntersectionObserver(
     (entries) => {
