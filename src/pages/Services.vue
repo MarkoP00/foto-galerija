@@ -111,7 +111,7 @@ import FoldingCard from "../components/FoldingCard.vue";
 
   .aboutWrapper {
     width: 100%;
-    padding-left: 0;
+    padding: 15px;
   }
 
   .about-text h1 {
