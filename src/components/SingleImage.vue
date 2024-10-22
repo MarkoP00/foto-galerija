@@ -206,7 +206,7 @@ img.fade {
 
 @media (max-width: 430px) {
   .image-container {
-    max-width: 400px;
+    max-width: 380px;
     min-height: 0px;
   }
   .swipeButtons {
