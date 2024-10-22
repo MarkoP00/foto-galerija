@@ -6,11 +6,9 @@
         alt="" />
     </div>
     <ul class="headerList">
-      <li><a href="">Početna</a></li>
+      <li><router-link to="/mainPage">Početna</router-link></li>
       <li><router-link to="/simple">O meni</router-link></li>
       <li><router-link to="/services">Usluge</router-link></li>
-      <!-- <li><a href="">Kontakt</a></li> -->
-      <!-- <li><a href="">Galerija</a></li> -->
       <li><router-link to="/admin">Dodaj slike</router-link></li>
     </ul>
     <div class="mobileHamburger">

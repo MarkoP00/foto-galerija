@@ -7,9 +7,9 @@
         @click="() => router.push('/mainPage')" />
     </div>
     <ul class="headerList">
-      <li><a href="">Početna</a></li>
+      <li><router-link to="/">Početna</router-link></li>
       <li><router-link to="/simple">O meni</router-link></li>
-      <li><a href="">Usluge</a></li>
+      <li><router-link to="/services">Usluge</router-link></li>
       <!-- <li><a href="">Kontakt</a></li> -->
       <!-- <li><a href="">Galerija</a></li> -->
       <li><router-link to="/admin">Dodaj slike</router-link></li>
