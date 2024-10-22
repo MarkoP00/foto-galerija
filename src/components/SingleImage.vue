@@ -94,7 +94,7 @@ const updateContainerStyle = (imgSrc) => {
       };
     } else {
       containerStyle.value = {
-        width: "auto",
+        width: "550px",
         height: isSmallScreen ? "60vh" : "80vh",
       };
     }
