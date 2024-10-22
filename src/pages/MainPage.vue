@@ -6,7 +6,7 @@
     @sortBy="sortByFamily"
     @onReset="resetFilter"
     @deleteImageId="deleteSingleImage"></PhotoGallery>
-  <AnimatedBackground></AnimatedBackground>
+  <!-- <AnimatedBackground></AnimatedBackground> -->
 
   <Transition name="fade">
     <SingleImage
@@ -21,7 +21,7 @@
 import { ref, onMounted } from "vue";
 import Header from "../components/Header.vue";
 import PhotoGallery from "../components/PhotoGallery.vue";
-import AnimatedBackground from "../components/AnimatedBackground.vue";
+// import AnimatedBackground from "../components/AnimatedBackground.vue";
 import SingleImage from "../components/SingleImage.vue";
 
 const selectedImageURL = ref("");
