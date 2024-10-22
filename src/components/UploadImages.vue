@@ -1,5 +1,5 @@
 <template>
-  <AnimatedBackground></AnimatedBackground>
+  <!-- <AnimatedBackground></AnimatedBackground> -->
   <SimpleHeader></SimpleHeader>
   <section class="upload-container">
     <Transition name="fade">
@@ -46,7 +46,7 @@
 import { ref, onMounted } from "vue";
 import { useRouter } from "vue-router";
 import GlobalPopup from "../global/GlobalPopup.vue";
-import AnimatedBackground from "./AnimatedBackground.vue";
+// import AnimatedBackground from "./AnimatedBackground.vue";
 import SimpleHeader from "./SimpleHeader.vue";
 const router = useRouter();
 

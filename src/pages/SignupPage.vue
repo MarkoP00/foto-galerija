@@ -77,7 +77,7 @@
       </div>
     </div>
   </main>
-  <AnimatedBackground></AnimatedBackground>
+  <!-- <AnimatedBackground></AnimatedBackground> -->
   <GlobalSpinner v-if="loading"></GlobalSpinner>
   <GlobalPopup
     v-if="popupTitle"
@@ -91,7 +91,7 @@
 <script setup>
 import { useRouter } from "vue-router";
 import { ref } from "vue";
-import AnimatedBackground from "../components/AnimatedBackground.vue";
+// import AnimatedBackground from "../components/AnimatedBackground.vue";
 import GlobalSpinner from "../global/GlobalSpinner.vue";
 import GlobalPopup from "../global/GlobalPopup.vue";
 import GlobalSuccess from "../global/GlobalSuccess.vue";

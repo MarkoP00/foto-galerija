@@ -94,7 +94,7 @@ const updateContainerStyle = (imgSrc) => {
       };
     } else {
       containerStyle.value = {
-        width: "550px",
+        width: "600px",
         height: isSmallScreen ? "60vh" : "80vh",
       };
     }
@@ -206,7 +206,7 @@ img.fade {
 
 @media (max-width: 430px) {
   .image-container {
-    max-width: 380px;
+    max-width: 400px;
     min-height: 0px;
   }
   .swipeButtons {

@@ -1,5 +1,5 @@
 <template>
-  <AnimatedBackground></AnimatedBackground>
+  <!-- <AnimatedBackground></AnimatedBackground> -->
   <GlobalSocial></GlobalSocial>
   <SimpleHeader></SimpleHeader>
   <section class="about">
@@ -22,7 +22,7 @@
 </template>
 
 <script setup>
-import AnimatedBackground from "../components/AnimatedBackground.vue";
+// import AnimatedBackground from "../components/AnimatedBackground.vue";
 import SimpleHeader from "../components/SimpleHeader.vue";
 import FoldingCard from "../components/FoldingCard.vue";
 </script>
