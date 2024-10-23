@@ -8,6 +8,6 @@
   color: #fff;
 }
 body {
-  /* background: #1f2833; */
-  background: linear-gradient(to right, #1f2833, #0b0c10);
+  /* background: linear-gradient(#1f2833, #0b0c10); */
+  background: linear-gradient(#1f2833, #141e30);
 }

@@ -130,16 +130,26 @@ import FoldingCard from "../components/FoldingCard.vue";
     margin-top: 10px;
   }
 }
+@media (max-width: 500px) {
+  .aboutContent {
+    flex-direction: column;
+    text-align: center;
+    max-width: 600px;
+    /* gap: 30px; */
+    margin-top: 80px;
+  }
+
+  /* .about img {
+    width: 75%;
+  } */
+}
 @media (max-width: 425px) {
   .aboutContent {
     flex-direction: column;
     text-align: center;
     max-width: 600px;
     gap: 30px;
+    margin-top: 00px;
   }
-
-  /* .about img {
-    width: 75%;
-  } */
 }
 </style>

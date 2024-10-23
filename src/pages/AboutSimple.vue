@@ -109,6 +109,7 @@ button:hover {
     text-align: center;
     max-width: 600px;
     gap: 0;
+    margin-top: 60px;
   }
   .about-text {
     margin-bottom: 0px;
@@ -135,6 +136,7 @@ button:hover {
     font-size: 16px;
   }
 }
+
 @media (max-width: 425px) {
   .aboutContent {
     gap: 0px;

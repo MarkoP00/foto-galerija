@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <a href="#">
+    <a href="https://www.facebook.com/Aleksandarpetrovicphotography013/">
       <i class="fa-brands fa-facebook"></i>
       <span>Facebook</span>
     </a>
@@ -8,7 +8,7 @@
       <i class="fa-brands fa-x-twitter"></i>
       <span>Twitter</span>
     </a> -->
-    <a href="#">
+    <a href="https://www.instagram.com/app09.08/">
       <i class="fab fa-instagram"></i>
       <span>Instagram</span>
     </a>
@@ -17,12 +17,14 @@
       <span>Whatsapp</span>
     </a> -->
 
-    <a href="#">
+    <a href="https://www.youtube.com/@aleksandarpetrovic3531">
       <i class="fab fa-youtube yt"></i>
       <span>YouTube</span>
     </a>
   </div>
 </template>
+
+<script setup></script>
 
 <style scoped>
 .container {
