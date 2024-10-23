@@ -135,8 +135,8 @@ import FoldingCard from "../components/FoldingCard.vue";
     flex-direction: column;
     text-align: center;
     max-width: 600px;
-    /* gap: 30px; */
-    margin-top: 80px;
+    gap: 30px;
+    margin-top: 40px;
   }
 
   /* .about img {

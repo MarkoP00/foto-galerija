@@ -204,9 +204,9 @@ img.fade {
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 430px) {
   .image-container {
-    max-width: 420px;
+    max-width: 380px;
     min-height: 0px;
   }
   .swipeButtons {
@@ -221,11 +221,7 @@ img.fade {
     padding: 5px;
   }
 }
-@media (max-width: 430px) {
-  .image-container {
-    max-width: 380px;
-  }
-}
+
 @media (max-width: 376px) {
   .image-container {
     max-width: 350px;

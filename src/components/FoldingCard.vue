@@ -163,8 +163,8 @@
 
 @media (max-width: 768px) {
   .imgBx {
-    height: 200px;
-    width: 200px;
+    height: 180px;
+    width: 180px;
   }
   .card {
     height: 350px;
@@ -182,7 +182,39 @@
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 550px) {
+  .imgBx {
+    height: 150px;
+    width: 150px;
+  }
+  .card {
+    height: 250px;
+    width: 300px;
+  }
+  .card .content .details .data {
+    margin: 0px;
+  }
+  .card .content .details .actionBtn {
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+  }
+  .data h3 {
+    margin-top: 5px;
+  }
+  .card .content .details {
+    padding: 10px;
+  }
+  .icon {
+    height: 40px;
+    width: 40px;
+  }
+  .icon i {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 500px) {
   .imgBx {
     height: 150px;
     width: 150px;
