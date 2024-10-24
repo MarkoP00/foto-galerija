@@ -115,7 +115,7 @@ const widget = window.cloudinary.createUploadWidget(
 
       // imageValues.value.title = "";
       // imageValues.value.description = "";
-      imageValues.value.category = "";
+      // imageValues.value.category = "";
     } else if (error && !result && result.event !== "success") {
       popupTitle.value = "Nastao je problem...";
       popupMessage.value = "Molim vas pokusajte ponovo";

@@ -203,6 +203,12 @@ img.fade {
     padding: 20px;
   }
 }
+@media (max-width: 700px) {
+  .image-container {
+    max-width: 430px;
+    min-height: 250px;
+  }
+}
 
 @media (max-width: 430px) {
   .image-container {

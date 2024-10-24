@@ -29,12 +29,14 @@
           :class="{ menuVisible: hamburgerMenuVisible }">
           <ul>
             <li @click="() => router.push('/mainPage')">
-              <a href="">Početna</a>
+              <router-link to="/mainPage">Početna</router-link>
             </li>
             <li @click="() => router.push('/simple')">
               <router-link to="/simple">O meni</router-link>
             </li>
-            <li><router-link to="/services">Usluge</router-link></li>
+            <li @click="() => router.push('/services')">
+              <router-link to="/services">Usluge</router-link>
+            </li>
             <li @click="() => router.push('/admin')">
               <router-link to="/admin">Dodaj slike</router-link>
             </li>
@@ -131,7 +133,7 @@ header {
   padding: 0 50px;
   z-index: 100;
   backdrop-filter: blur(2px);
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 header.sticky {
@@ -206,12 +208,13 @@ header img {
   top: 100%;
   right: 0;
   backdrop-filter: blur(2px);
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.2);
   padding: 20px;
   z-index: 100;
   transform: translateX(-200px);
   transition: all 0.3s;
   animation: fade-in 0.3s;
+  border-bottom-left-radius: 20px;
 }
 
 .menuVisible {
@@ -331,6 +334,7 @@ header.sticky .mobileSocial {
   .headerList {
     display: none;
   }
+
   .mobileHamburger {
     display: block;
   }
