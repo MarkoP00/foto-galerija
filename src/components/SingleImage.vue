@@ -37,6 +37,7 @@
 import { ref } from "vue";
 import { watch } from "vue";
 import { onMounted } from "vue";
+
 const props = defineProps({
   selectedImageURL: {
     type: String,
@@ -196,8 +197,12 @@ img.fade {
 
 @media (max-width: 769px) {
   .image-container {
-    max-width: 700px;
-    min-height: 400px;
+    max-width: 500px;
+    min-height: 250px;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.3);
+  }
+  .image-container img {
+    border-radius: 10px;
   }
   .closeWindow {
     padding: 20px;
@@ -206,7 +211,7 @@ img.fade {
 @media (max-width: 700px) {
   .image-container {
     max-width: 430px;
-    min-height: 250px;
+    min-height: 0px;
   }
 }
 

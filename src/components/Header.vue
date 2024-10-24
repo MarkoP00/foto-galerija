@@ -120,7 +120,6 @@ onMounted(() => {
 </script>
 
 <style scoped>
-/* Header Styles */
 header {
   position: fixed;
   top: 0;
@@ -133,12 +132,12 @@ header {
   padding: 0 50px;
   z-index: 100;
   backdrop-filter: blur(2px);
-  background-color: rgba(255, 255, 255, 0.2);
+  background: rgb(255, 255, 255, 0.2);
 }
 
 header.sticky {
   padding: 10px 100px;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 header img {
@@ -176,7 +175,7 @@ header img {
   height: 3px;
   bottom: -30%;
   left: 0;
-  background-color: #ff6347;
+  background-color: #008cff;
   transition: width 0.6s;
   border-radius: 20px;
 }
@@ -186,7 +185,7 @@ header img {
 }
 
 .headerList li a:hover {
-  color: #ff6347;
+  color: #008cff;
 }
 
 .mobileHamburger {
@@ -224,7 +223,7 @@ header img {
 header.sticky .mobileList {
   width: 100%;
   backdrop-filter: blur(2px);
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .mobileList ul {
@@ -238,7 +237,7 @@ header.sticky .mobileList {
   margin: 10px 0;
   border: 1px solid #fff;
   padding: 10px;
-  background-color: rgb(22, 147, 230, 0.4);
+  background-color: rgb(22, 147, 230, 0.5);
   border-radius: 10px;
   font-weight: 600;
   display: flex;
@@ -356,12 +355,15 @@ header.sticky .mobileSocial {
   .mobileList ul li {
     border: 1px solid #fff;
     padding: 10px;
-    background-color: rgb(22, 147, 230, 0.4);
+    background-color: rgb(22, 147, 230, 0.8);
     border-radius: 10px;
     font-weight: 600;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  header.sticky .mobileList ul li {
+    background-color: rgb(22, 147, 230, 0.5);
   }
   .mobileList ul li i {
     font-size: 25px;

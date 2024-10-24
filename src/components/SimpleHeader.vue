@@ -90,7 +90,7 @@ header {
   padding: 0 50px;
   z-index: 100;
   backdrop-filter: blur(2px);
-  background-color: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.9);
 }
 
 header.sticky {
@@ -167,7 +167,7 @@ header img {
   padding: 20px;
   width: 100%;
   backdrop-filter: blur(2px);
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.9);
   z-index: 100;
   transform: translateX(-200px);
   transition: all 0.3s;

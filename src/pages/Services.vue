@@ -29,7 +29,7 @@ import FoldingCard from "../components/FoldingCard.vue";
 
 <style scoped>
 .about {
-  min-height: 100vh;
+  min-height: 1000px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -91,10 +91,7 @@ import FoldingCard from "../components/FoldingCard.vue";
   gap: 20px;
 }
 
-@media (max-width: 768px) {
-  .about {
-    margin-top: 60px;
-  }
+@media screen and (max-width: 768px) {
   .aboutContent {
     flex-direction: column;
     text-align: center;
@@ -104,10 +101,6 @@ import FoldingCard from "../components/FoldingCard.vue";
   .about-text {
     margin-bottom: 0px;
   }
-  /* .about img {
-    width: 70%;
-    margin-bottom: 20px;
-  } */
 
   .aboutWrapper {
     width: 100%;
@@ -136,20 +129,18 @@ import FoldingCard from "../components/FoldingCard.vue";
     text-align: center;
     max-width: 600px;
     gap: 30px;
-    margin-top: 40px;
   }
 
   /* .about img {
     width: 75%;
   } */
 }
-@media (max-width: 425px) {
+@media screen and (max-width: 425px) {
   .aboutContent {
     flex-direction: column;
     text-align: center;
     max-width: 600px;
     gap: 30px;
-    margin-top: 00px;
   }
 }
 </style>
