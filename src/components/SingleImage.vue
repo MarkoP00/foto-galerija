@@ -199,7 +199,6 @@ img.fade {
   .image-container {
     max-width: 500px;
     min-height: 250px;
-    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.3);
   }
   .image-container img {
     border-radius: 10px;
